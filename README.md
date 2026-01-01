@@ -9,7 +9,7 @@
 Cardiovascular diseases and Cardiac Arrhythmia are the most familiar reasons for death throughout the world over the last few decades across the world. However, it is difficult to examine patients in all cases accurately, and
 consultation with a patient for 24 hours by a doctor is not possible as it needs extra patience, expertise, and time. Thus, with ECG sensors, Arduino, and Raspberry Pi, we implemented machine learning models based on K-Nearest Neighbour, Logistic Regression, Support Vector Machine, and Random Forest for heart disease prediction based on the parameters and attributes related to cardiovascular disease. The datasets in this research are available publicly on the UCI website. The early diagnosis of cardiovascular diseases assists in making decisions on lifestyle changes in patients prone to high risk of heart diseases and minimizing the complications. The result of this research canbe a milestone in medicine.
 
-## 🏗 Results
+## 📈 Results
 The main operation is carried out with an ECG sensor to measure electrical activity and record the electricalsignals in the form of graphs. The main discussion of the above project is to Classify the two types of heart disease (CVD and Cardiac Arrhythmia). The secondary operation is to detect the risk of disease by creating an application interface. The output value is obtained in binary format in which 0 indicates no disease and 1 indicates the person has a chance ofhaving CVD. Among multiple machine learning algorithms, the Support Vector Classifier shows the highest accuracy of 78.67%. For cardiac Arrhythmia, the output includes 16 classes based on the value of attributes. Initially, PCA is applied for feature extraction, followed by SVM with various kernel functions. The results of the random forest classifier show that the SVM with Linear Kernel and regularization parameter of 0.01 is 74% accurate amongst the other kernels used for predicting CardiacArrhythmia (Tables I and II).
 
 | Rank | Model | Accuracy |
@@ -43,5 +43,5 @@ The main operation is carried out with an ECG sensor to measure electrical activ
 ---
 
 ### 🎓 Academic Citation
-Authorized licensed use limited to: **Texas A&M University**. 
+Authorized licensed use limited to: **PES University**. 
 *Originally presented at the 2022 IEEE 4th Eurasia Conference on Biomedical Engineering, Healthcare and Sustainability (ECBIOS).*
