@@ -1,26 +1,16 @@
 # 🏥 IoT-Based Healthcare Kit for Cardiac Diagnosis
-> **Published in IEEE Xplore** | Developed at PES University | Licensed to Texas A&M University
+> **Published in IEEE Xplore** | Developed at PES University
 
 [![IEEE Xplore](https://img.shields.io/badge/Publication-IEEE%20Xplore-maroon.svg)](https://ieeexplore.ieee.org/)
 [![Tech Stack](https://img.shields.io/badge/Stack-IoT%20%7C%20ML%20%7C%20Embedded-blue.svg)](#)
 [![Accuracy](https://img.shields.io/badge/Best%20Accuracy-78.67%25-orange.svg)](#)
 
 ## 🔍 Project Overview
-Cardiovascular diseases (CVD) and Cardiac Arrhythmia are leading causes of mortality worldwide. This project implements a hardware-software integrated system for **24/7 cardiac monitoring**. By utilizing ECG sensors and machine learning, the system provides early diagnosis, allowing for preventative lifestyle changes and medical intervention.
+Cardiovascular diseases and Cardiac Arrhythmia are the most familiar reasons for death throughout the world over the last few decades across the world. However, it is difficult to examine patients in all cases accurately, and
+consultation with a patient for 24 hours by a doctor is not possible as it needs extra patience, expertise, and time. Thus, with ECG sensors, Arduino, and Raspberry Pi, we implemented machine learning models based on K-Nearest Neighbour, Logistic Regression, Support Vector Machine, and Random Forest for heart disease prediction based on the parameters and attributes related to cardiovascular disease. The datasets in this research are available publicly on the UCI website. The early diagnosis of cardiovascular diseases assists in making decisions on lifestyle changes in patients prone to high risk of heart diseases and minimizing the complications. The result of this research canbe a milestone in medicine.
 
-## 🏗 System Architecture & Stack
-The project bridges the gap between medical signal acquisition and automated data analysis:
-
-* **Hardware Layer:** ECG Sensors (signal acquisition), Arduino (data processing), Raspberry Pi (computational hub).
-* **Signal Processing:** Real-time peak detection in ECG waveforms to extract vital cardiac attributes.
-* **ML Framework:** Python-based models trained on the **UCI Machine Learning Repository**.
-* **Dimensionality Reduction:** Principal Component Analysis (PCA) for optimized feature extraction in Arrhythmia classification.
-
-## 🤖 Machine Learning Performance
-We evaluated several algorithms to determine the most reliable model for clinical decision support.
-
-### 1. Cardiovascular Disease (CVD) Prediction
-*Binary Classification: (0: Healthy, 1: At Risk)*
+## 🏗 Results
+The main operation is carried out with an ECG sensor to measure electrical activity and record the electricalsignals in the form of graphs. The main discussion of the above project is to Classify the two types of heart disease (CVD and Cardiac Arrhythmia). The secondary operation is to detect the risk of disease by creating an application interface. The output value is obtained in binary format in which 0 indicates no disease and 1 indicates the person has a chance ofhaving CVD. Among multiple machine learning algorithms, the Support Vector Classifier shows the highest accuracy of 78.67%. For cardiac Arrhythmia, the output includes 16 classes based on the value of attributes. Initially, PCA is applied for feature extraction, followed by SVM with various kernel functions. The results of the random forest classifier show that the SVM with Linear Kernel and regularization parameter of 0.01 is 74% accurate amongst the other kernels used for predicting CardiacArrhythmia (Tables I and II).
 
 | Rank | Model | Accuracy |
 | :--- | :--- | :--- |
